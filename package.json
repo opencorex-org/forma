@@ -1,0 +1,46 @@
+{
+  "name": "forma",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Forma - Architectural Data Platform for Modern Applications",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "rm -rf node_modules packages/*/node_modules packages/*/dist",
+    "format": "prettier --write \"packages/**/*.{ts,tsx,json}\"",
+    "type-check": "turbo run type-check",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "reset": "pnpm clean && pnpm install && pnpm build"
+  },
+  "keywords": [
+    "forma",
+    "database",
+    "orm",
+    "typescript",
+    "postgresql",
+    "mongodb",
+    "dynamodb"
+  ],
+  "author": "Forma Contributors",
+  "license": "MIT",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "turbo": "^1.13.0",
+    "typescript": "^5.3.3"
+  }
+}
