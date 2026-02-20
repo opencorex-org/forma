@@ -1,0 +1,30 @@
+{
+  "name": "data-platform-core-adapter-postgres",
+  "version": "1.0.0",
+  "description": "PostgreSQL adapter for the data platform core.",
+  "main": "src/driver.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "jest": "^27.0.6",
+    "@types/jest": "^27.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/data-platform-core.git"
+  },
+  "keywords": [
+    "data",
+    "platform",
+    "postgres",
+    "adapter"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
