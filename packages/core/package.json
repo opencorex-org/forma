@@ -1,0 +1,45 @@
+{
+  "name": "@forma/core",
+  "version": "0.1.0",
+  "description": "Core engine for Forma data platform",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "type-check": "tsc --noEmit",
+    "benchmark": "node --loader ts-node/esm benchmarks/index.ts"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1",
+    "dataloader": "^2.2.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/dataloader": "^2.0.3",
+    "@vitest/coverage-v8": "^1.1.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./schema": {
+      "import": "./dist/schema/index.js",
+      "require": "./dist/schema/index.js",
+      "types": "./dist/schema/index.d.ts"
+    },
+    "./query": {
+      "import": "./dist/query/index.js",
+      "require": "./dist/query/index.js",
+      "types": "./dist/query/index.d.ts"
+    }
+  }
+}

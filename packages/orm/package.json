@@ -1,0 +1,32 @@
+{
+  "name": "orm",
+  "version": "1.0.0",
+  "description": "Object-Relational Mapping (ORM) layer for the data platform core.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.0",
+    "ts-jest": "^26.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/data-platform-core.git"
+  },
+  "keywords": [
+    "orm",
+    "data",
+    "database"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/data-platform-core/issues"
+  },
+  "homepage": "https://github.com/yourusername/data-platform-core#readme"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "mongodb-adapter",
+  "version": "1.0.0",
+  "description": "MongoDB adapter for the data platform core.",
+  "main": "src/driver.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "mongodb": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "jest": "^27.0.0",
+    "@types/jest": "^27.0.0"
+  },
+  "license": "MIT"
+}

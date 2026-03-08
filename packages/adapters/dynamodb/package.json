@@ -1,0 +1,19 @@
+{
+  "name": "dynamodb-adapter",
+  "version": "1.0.0",
+  "description": "DynamoDB adapter for the data platform core.",
+  "main": "src/driver.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1000.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "jest": "^26.0.0",
+    "@types/jest": "^26.0.0"
+  },
+  "license": "MIT"
+}
